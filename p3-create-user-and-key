@@ -1,0 +1,8 @@
+[centos@login ~]$ for i in `cat /etc/genders | awk '{print $1}'`; do 
+> scp p3-key $i:~/
+> ssh -t $i sudo mkdir ~p3/.ssh
+> ssh -t $i sudo cp p3-key ~p3/.ssh/authorized_keys
+> ssh -t $i sudo chown -R p3  ~p3/.ssh
+> ssh -t $i sudo chmod 700 ~p3/.ssh
+> ssh -t $i sudo chmod 600 ~p3/.ssh/authorized_keys
+> done
