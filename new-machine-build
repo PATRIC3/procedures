@@ -1,5 +1,12 @@
 For a new CentOS build
 
+Create p3 user
+
+Check out bootstrap module
 
 cd kb_bootstrap_centos64
 ./install-centos-packages centos-6.7.packages
+
+Run build bootstrap 
+
+perl bootstrap_modules.pl -d /disks/patric-common/runtime -m modules-patric3.dat > build.out 2>&1 &
