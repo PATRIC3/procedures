@@ -1,0 +1,14 @@
+mkdir -p /disks/p3/deployment/
+mkdir -p /disks/patric-common/runtime/
+mkdir -p /disks/patric-common/data/kmers/core.2015-0818/Data.2/
+mkdir -p /disks/tmp/
+mkdir -p /disks/patric-common/data/NR/
+mkdir -p /disks/patric-common/data/Virulence/
+mkdir -p /disks/patric-common/data/FIGfams/
+mkdir -p /disks/p3/fba/fbacache/
+mkdir -p /disks/p3/fba/fbajobs/
+mkdir -p /disks/Shock/site/
+mkdir -p /disks/Shock/data/
+mkdir -p /disks/Shock/logs/
+mkdir -p /disks/p3/workspace/
+mkdir -p /disks/p3/workspace/wsjobs/
