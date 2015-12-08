@@ -1,0 +1,6 @@
+git clone https://github.com/patric3/dev_container
+cd dev_container/modules
+# clone every module in procedures/service-node
+cd ../
+./bootstrap /disks/patric-common/runtime
+cp bootstrap.cfg auto-deploy.cfg
