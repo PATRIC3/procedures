@@ -12,3 +12,4 @@ mkdir -p /disks/Shock/data/
 mkdir -p /disks/Shock/logs/
 mkdir -p /disks/p3/workspace/
 mkdir -p /disks/p3/workspace/wsjobs/
+mkdir -p /disks/awe/
