@@ -1,0 +1,9 @@
+Requires custom solr built from bootstrap p3_solr
+Create directory to hold solr installation
+clone PATRIC3/patric_solr to install the core schema files
+copy indexed data from directory where they were copied from the running system:
+  for i in *; do echo $i; rsync -arv $i/data /disks/solr/patric_solr/$i/.; done
+  
+Start server
+
+/disks/patric-common/runtime/p3_solr/solr/bin/solr restart -Dsolr.solr.home=/disks/solr/patric_solr/ -Dlucene.version=5.3
