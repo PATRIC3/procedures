@@ -4,6 +4,17 @@ clone PATRIC3/patric_solr to install the core schema files
 copy indexed data from directory where they were copied from the running system:
   for i in *; do echo $i; rsync -arv $i/data /disks/solr/patric_solr/$i/.; done
   
-Start server
+Start server script:
 
-/disks/patric-common/runtime/p3_solr/solr/bin/solr restart -Dsolr.solr.home=/disks/solr/patric_solr/ -Dlucene.version=5.3
+#!/bin/sh
+
+export SOLR_JAVA_HOME="/disks/patric-common/runtime/java"
+#NEWRELIC="-a -javaagent:/home/solr/solr5/newrelic/newrelic.jar"
+ulimit -v unlimited
+ulimit -n 10000
+
+export PATH=/disks/patric-common/runtime/bin:/disks/patric-common/runtime/p3_solr/solr/bin:$PATH
+
+solr_home=/disks/solr/patric_solr/
+
+solr restart -Dsolr.solr.home=$solr_home -Dlucene.version=5.3 -m 96g $NEWRELIC
