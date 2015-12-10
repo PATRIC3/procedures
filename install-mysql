@@ -1,0 +1,15 @@
+Initialize yum repo
+ cat /etc/yum.repos.d/mariadb.repo 
+# MariaDB 10.1 CentOS repository list - created 2015-12-09 19:52 UTC
+# http://mariadb.org/mariadb/repositories/
+[mariadb]
+name = MariaDB
+baseurl = http://yum.mariadb.org/10.1/centos6-amd64
+gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+gpgcheck=1
+
+#set datadir=/path/to/datatadir in /etc/my.cnf.d/server.cnf
+mysql_install_db
+mysql_secure_installation 
+setenforce 0
+/etc/init.d/mysql start
