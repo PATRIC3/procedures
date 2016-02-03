@@ -1,0 +1,4 @@
+Larch runs AWE workers for annotation (p3c only currently 2/3/16) and the similarity search service
+
+Startup:
+/disks/p3/deployment/services/similarity_service/start_service 
