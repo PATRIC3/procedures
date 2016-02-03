@@ -1,0 +1,7 @@
+Beech is a central hub of the PATRIC3 services.
+
+/disks/p3/deployment/services/nexus_emulation/start_service
+/disks/p3/deployment/services/handle_service/start_service
+/disks/p3/deployment/services/ProbModelSEED/start_service
+/disks/p3/deployment/services/Workspace/start_service
+/disks/p3/deployment/services/app_service/start_service
