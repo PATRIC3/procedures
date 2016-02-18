@@ -2,3 +2,48 @@ Larch runs AWE workers for annotation (p3c only currently 2/3/16) and the simila
 
 Startup:
 /disks/p3/deployment/services/similarity_service/start_service 
+
+awe worker status 2/18/16:
+olson@larch:~$ ps auxw|grep awe
+p3c      16195  0.0  0.0 548060  4724 ?        Ssl   2015  22:58 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-1.cfg
+p3c      16205  0.0  0.0 623840  4916 ?        Ssl   2015  23:08 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-2.cfg
+p3c      16216  0.0  0.0 548060  6932 ?        Ssl   2015  22:59 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-3.cfg
+p3c      16230  0.0  0.0 548060  8272 ?        Ssl   2015  23:13 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-4.cfg
+p3c      16240  0.0  0.0 548060  4580 ?        Ssl   2015  12:54 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-5.cfg
+p3c      16372  0.0  0.0 548060  4752 ?        Ssl   2015  23:19 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-6.cfg
+p3c      16383  0.0  0.0 548060  6704 ?        Ssl   2015  13:04 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-7.cfg
+p3c      16394  0.0  0.0 548060  4756 ?        Ssl   2015  23:19 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-8.cfg
+p3c      16405  0.0  0.0 548060  6124 ?        Ssl   2015  23:12 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-9.cfg
+p3c      16416  0.0  0.0 548060  4588 ?        Ssl   2015  12:57 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-10.cfg
+p3c      16427  0.0  0.0 558304  4788 ?        Ssl   2015  23:10 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-11.cfg
+p3c      16438  0.0  0.0 548060  4724 ?        Ssl   2015  23:15 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-12.cfg
+p3c      16449  0.0  0.0 548060  4716 ?        Ssl   2015  23:07 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-13.cfg
+p3c      16460  0.0  0.0 548060  6928 ?        Ssl   2015  23:05 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-14.cfg
+p3c      16471  0.0  0.0 548060  4724 ?        Ssl   2015  22:56 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-15.cfg
+p3c      16482  0.0  0.0 623840  4836 ?        Ssl   2015  23:06 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-16.cfg
+p3       17047  0.0  0.0 482524  8588 ?        Ssl  Feb04   4:51 /disks/p3/deployment/bin/awe-client -conf /disks/p3/deployment/services/awe_service/conf/awec.p3-genome-annotation-1.cfg
+p3       19395  0.0  0.0 482524 10516 ?        Ssl  Feb04   4:50 /disks/p3/deployment/bin/awe-client -conf /disks/p3/deployment/services/awe_service/conf/awec.p3-genome-annotation-2.cfg
+p3       19431  0.0  0.0 482524  8436 ?        Ssl  Feb04   4:49 /disks/p3/deployment/bin/awe-client -conf /disks/p3/deployment/services/awe_service/conf/awec.p3-genome-annotation-3.cfg
+p3       19459  0.0  0.0 548060  8472 ?        Ssl  Feb04   4:50 /disks/p3/deployment/bin/awe-client -conf /disks/p3/deployment/services/awe_service/conf/awec.p3-genome-annotation-4.cfg
+p3       19472  0.0  0.0 482524  6536 ?        Ssl  Feb04   4:51 /disks/p3/deployment/bin/awe-client -conf /disks/p3/deployment/services/awe_service/conf/awec.p3-genome-annotation-5.cfg
+p3       19485  0.0  0.0 548060 10324 ?        Ssl  Feb04   4:53 /disks/p3/deployment/bin/awe-client -conf /disks/p3/deployment/services/awe_service/conf/awec.p3-genome-annotation-6.cfg
+p3       19499  0.0  0.0 548060  8472 ?        Ssl  Feb04   4:50 /disks/p3/deployment/bin/awe-client -conf /disks/p3/deployment/services/awe_service/conf/awec.p3-genome-annotation-7.cfg
+p3       19512  0.0  0.0 548060  6576 ?        Ssl  Feb04   4:55 /disks/p3/deployment/bin/awe-client -conf /disks/p3/deployment/services/awe_service/conf/awec.p3-genome-annotation-8.cfg
+p3       19524  0.0  0.0 482524 10588 ?        Ssl  Feb04   4:49 /disks/p3/deployment/bin/awe-client -conf /disks/p3/deployment/services/awe_service/conf/awec.p3-genome-annotation-9.cfg
+p3       19537  0.0  0.0 482524 10220 ?        Ssl  Feb04   4:52 /disks/p3/deployment/bin/awe-client -conf /disks/p3/deployment/services/awe_service/conf/awec.p3-genome-annotation-10.cfg
+p3       19549  0.0  0.0 548060 10544 ?        Ssl  Feb04   4:50 /disks/p3/deployment/bin/awe-client -conf /disks/p3/deployment/services/awe_service/conf/awec.p3-genome-annotation-11.cfg
+p3       19562  0.0  0.0 548060 10384 ?        Ssl  Feb04   4:49 /disks/p3/deployment/bin/awe-client -conf /disks/p3/deployment/services/awe_service/conf/awec.p3-genome-annotation-12.cfg
+p3       19574  0.0  0.0 548060  8408 ?        Ssl  Feb04   4:53 /disks/p3/deployment/bin/awe-client -conf /disks/p3/deployment/services/awe_service/conf/awec.p3-genome-annotation-13.cfg
+p3       19586  0.0  0.0 482524  8664 ?        Ssl  Feb04   4:53 /disks/p3/deployment/bin/awe-client -conf /disks/p3/deployment/services/awe_service/conf/awec.p3-genome-annotation-14.cfg
+p3       19599  0.0  0.0 482524  8440 ?        Ssl  Feb04   4:53 /disks/p3/deployment/bin/awe-client -conf /disks/p3/deployment/services/awe_service/conf/awec.p3-genome-annotation-15.cfg
+p3       19612  0.0  0.0 482524  8592 ?        Ssl  Feb04   4:53 /disks/p3/deployment/bin/awe-client -conf /disks/p3/deployment/services/awe_service/conf/awec.p3-genome-annotation-16.cfg
+olson    22799  0.0  0.0 103260   856 pts/7    S+   13:26   0:00 grep awe
+p3c      27368  0.0  0.0 548056  6944 ?        Ssl   2015  21:02 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-17.cfg
+p3c      27381  0.0  0.0 548056  7204 ?        Ssl   2015  20:59 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-18.cfg
+p3c      27395  0.0  0.0 548056  9036 ?        Ssl   2015  21:09 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-19.cfg
+p3c      27411  0.0  0.0 548056  9088 ?        Ssl   2015  21:28 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-20.cfg
+p3c      27426  0.0  0.0 548056  7148 ?        Ssl   2015  21:01 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-21.cfg
+p3c      27440  0.0  0.0 548056  5504 ?        Ssl   2015  20:59 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-22.cfg
+p3c      27455  0.0  0.0 548056  9148 ?        Ssl   2015  21:03 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-23.cfg
+p3c      27469  0.0  0.0 548056  8924 ?        Ssl   2015  20:58 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-24.cfg
+olson@larch:~$
