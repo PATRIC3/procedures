@@ -1,0 +1,23 @@
+gum is an awe worker
+olson@gum:~$ ps auxw|grep awe
+olson     2582  0.0  0.0 103304   872 pts/1    S+   13:29   0:00 grep awe
+p3c      11959  0.0  0.0 629960 10716 ?        Ssl   2015  33:22 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-1.cfg
+p3c      19597  0.0  0.0 554172 13024 ?        Ssl   2015  33:21 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-2.cfg
+p3c      19607  0.0  0.0 554172  8856 ?        Ssl   2015  32:57 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-3.cfg
+p3c      19618  0.0  0.0 564416 10664 ?        Ssl   2015  33:16 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-4.cfg
+p3c      19629  0.0  0.0 564416  8976 ?        Ssl   2015  33:05 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-5.cfg
+p3c      19640  0.0  0.0 554172  6860 ?        Ssl   2015  33:21 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-6.cfg
+p3c      19686  0.0  0.0 629952 10764 ?        Ssl   2015  33:30 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-7.cfg
+p3c      19697  0.0  0.0 554172  8852 ?        Ssl   2015  33:25 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-8.cfg
+p3c      19711  0.0  0.0 564416 10748 ?        Ssl   2015  33:22 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-9.cfg
+p3c      19725  0.0  0.0 564416 10584 ?        Ssl   2015  33:29 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-10.cfg
+p3c      19737  0.0  0.0 554172  8904 ?        Ssl   2015  33:22 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-11.cfg
+p3c      19748  0.0  0.0 554172  8824 ?        Ssl   2015  33:08 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-12.cfg
+p3c      19760  0.0  0.0 554172 10944 ?        Ssl   2015  33:15 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-13.cfg
+p3c      19772  0.0  0.0 564416  8980 ?        Ssl   2015  33:13 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-14.cfg
+p3c      19784  0.0  0.0 554172  8876 ?        Ssl   2015  33:18 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-15.cfg
+p3c      19797  0.0  0.0 640196  8984 ?        Ssl   2015  33:24 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-16.cfg
+p3c      19808  0.0  0.0 564416  8984 ?        Ssl   2015  33:14 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-17.cfg
+p3c      19819  0.0  0.0 629952 10912 ?        Ssl   2015  33:21 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-18.cfg
+p3c      19830  0.0  0.0 554172  8716 ?        Ssl   2015  33:01 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-19.cfg
+p3c      19846  0.0  0.0 554172  8884 ?        Ssl   2015  33:28 /disks/p3c/deployment/bin/awe-client -conf /disks/p3c/deployment/services/awe_service/conf/awec.p3c-20.cfg
