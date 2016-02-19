@@ -1,0 +1,23 @@
+Needed to add new cert for alpha. Downloaded from
+
+https://spaces.internet2.edu/display/InCCollaborate/InCommon+Cert+Types
+
+the InCommon RSA Server CA certificate. Was in DER, converted using
+
+openssl x509 -in Downloads/InCommonRSAServerCA_2.crt -inform der -out InCommonRSAServerCA_2.pem
+
+add to /etc/pki/ca-trust/source/anchors
+
+[root@beech anchors]# update-ca-trust extract
+update-ca-trust: Warning: The dynamic CA configuration feature is in the disabled state
+[root@beech anchors]# ^C
+[root@beech anchors]# update-ca-trust force-enable
+[root@beech anchors]# update-ca-trust extract
+
+This fixed curl and system perl, but runtime perl still broken.
+
+Fix for late model perl:
+
+export PERL_LWP_SSL_CA_FILE=/etc/pki/tls/cert.pem
+
+this overrides the use of the Mozilla::CA package of certificates.
