@@ -1,16 +1,16 @@
-Needed to add new cert for alpha. Downloaded from
+In order to make nexus_emulation on beech happy with new cert for alpha, we needed to update
+the CA certificate for the issuer. I downloaded from
 
 https://spaces.internet2.edu/display/InCCollaborate/InCommon+Cert+Types
 
-the InCommon RSA Server CA certificate. Was in DER, converted using
+the InCommon RSA Server CA certificate. It was in DER format, converted using
 
 openssl x509 -in Downloads/InCommonRSAServerCA_2.crt -inform der -out InCommonRSAServerCA_2.pem
 
-add to /etc/pki/ca-trust/source/anchors
+That file is added to /etc/pki/ca-trust/source/anchors and the certificate bundle updated:
 
 [root@beech anchors]# update-ca-trust extract
 update-ca-trust: Warning: The dynamic CA configuration feature is in the disabled state
-[root@beech anchors]# ^C
 [root@beech anchors]# update-ca-trust force-enable
 [root@beech anchors]# update-ca-trust extract
 
