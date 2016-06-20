@@ -1,6 +1,6 @@
 Beech is a central hub of the PATRIC3 services.
 
-mongod --fork --logpath /disks/p3/mongo/mongo.log --logappend --pidfilepath /disk/p3/mongo --dbpath /disks/p3/mongo/data/
+mongod --fork --logpath /disks/p3/mongo/mongo.log --logappend --pidfilepath /disks/p3/mongo/mongo.pid --dbpath /disks/p3/mongo/data/
 
 /disks/p3/deployment/services/nexus_emulation/start_service
 /disks/p3/deployment/services/handle_service/start_service
