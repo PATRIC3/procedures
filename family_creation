@@ -1,0 +1,10 @@
+Create new kmers - rebuild_converged_data. cf /vol/core-seed/kmers/core.2016-0817/build
+
+Build genus.data from patric: build_family_dir_from_genera
+Build local families: run_mcl_parallel
+Merge families: get_merged_families_p, get_merged_families_2, get_merged_families_3
+Propagate old family names: p3x-propagate-family-names.
+This writes logfiles; run for each genus for local fams and once for global fams.
+Update propagated names to create new families: p3x-update-propagated-family-names
+For the kser dynamic family caller: create NR data with p3x-create-nr-for-fams
+then create release directory with p3x-create-release-dir
