@@ -1,4 +1,5 @@
-Requires custom solr built from bootstrap p3_solr
+Download custom solr from p3_solr repo
+wget https://github.com/PATRIC3/p3_solr/releases/download/5.5.0/solr-5.5.0-PATRIC.tgz
 Create directory to hold solr installation
 clone PATRIC3/patric_solr to install the core schema files
 copy indexed data from directory where they were copied from the running system:

@@ -1,0 +1,6 @@
+# requirement: mongdo db, redis server
+# install node v6.x LTS
+# git clone --recursive https://github.com/PATRIC3/p3_user.git
+# npm install
+# config p3-user.conf (use p3-user.conf.sample as a template)
+# forever start bin/p3-web // starting app
