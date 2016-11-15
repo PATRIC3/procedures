@@ -1,0 +1,6 @@
+# requirement: redis server
+# install node v6.x LTS
+# git clone --recursive https://github.com/PATRIC3/p3_web.git
+# npm install
+# config p3-user.conf (use from p3-web.conf.sample as a template)
+# forever start bin/p3-user // starting app
