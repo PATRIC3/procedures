@@ -2,3 +2,11 @@ Kmer server startup
 
 In /scratch/olson/checkpoint/close_kmers
 ./kser --n-kmer-thread 6 6100 --reserve-mapping 1000000000  /disks/patric-common/data/fams/2015-0820/rel
+
+Updated startup as of Dec 2016:
+mkdir /disks/p3/logs
+cd /disks/p3/logs
+
+/disks/patric-common/runtime/bin/kser \
+  --n-kmer-thread 24 --n-inserter-threads 14 --n-load-threads 12 --n-family-file-threads 12 6100 \
+  --reserve-mapping 100000000  /disks/patric-common/data/fams/patric-fams-2016-0904  > kser.out 2> kser.err &
