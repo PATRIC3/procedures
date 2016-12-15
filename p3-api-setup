@@ -4,3 +4,18 @@
 # npm install
 # config p3api.conf (use p3api.conf.sample as a template)
 # forever start bin/p3api-server  // starting app
+
+
+Configuration of p3-api on beech.
+
+Installing redis from yum (vers 2.4.10-1.el6)
+
+Update /etc/redis.conf:
+
+  comment out the bind statement to ensure redis listens on all ports
+    set working directory to /disks/p3/redis
+    
+starting via standard startup scripts
+/sbin/chkconfig redis on
+
+Needed libmpc installed from yum
