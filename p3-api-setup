@@ -37,3 +37,7 @@ If the module was already deployed and you need to pull an upstream update:
 make
 cd /disks/p3/web_services/dev_container
 perl auto-deploy deploy.cfg --module p3_api_service
+
+then restart services:
+/disks/p3/web_services/deployment/services/p3_api_service/stop_service
+/disks/p3/web_services/deployment/services/p3_api_service/start_service 
