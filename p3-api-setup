@@ -19,3 +19,21 @@ starting via standard startup scripts
 /sbin/chkconfig redis on
 
 Needed libmpc installed from yum
+
+To update from git:
+
+login to beech
+sudo to p3
+cd /disks/p3/web_services/dev_container
+. user-env.sh
+cd modules/p3_api_service
+
+If the module was already deployed and you need to pull an upstream update:
+
+  cd p3_api
+  git pull
+  cd ..
+
+make
+cd /disks/p3/web_services/dev_container
+perl auto-deploy deploy.cfg --module p3_api_service
