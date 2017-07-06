@@ -1,5 +1,15 @@
 Kmer server startup
 
+
+
+Latest startup:
+
+just run
+
+  /disks/patric-common/data/fams/patric-fams-2017-0411/start.kser
+  
+===history below===
+
 In /scratch/olson/checkpoint/close_kmers
 ./kser --n-kmer-thread 6 6100 --reserve-mapping 1000000000  /disks/patric-common/data/fams/2015-0820/rel
 
