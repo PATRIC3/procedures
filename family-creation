@@ -2,6 +2,13 @@ Create new kmers - rebuild_converged_data. cf /vol/core-seed/kmers/core.2016-081
 
 Build genus.data from patric: build_family_dir_from_genera
 Build local families: run_mcl_parallel
+
+Create alignments.
+  Create directory sync.dir
+  Create empty file in sync.dir for each genus
+  Create new database using schema in P3AlignmentCompute
+    on Fir, username pattyfams
+
 Merge families: get_merged_families_p, get_merged_families_2, get_merged_families_3
 Propagate old family names: p3x-propagate-family-names.
 This writes logfiles; run for each genus for local fams and once for global fams.
