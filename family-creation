@@ -1,7 +1,7 @@
 Create new kmers - rebuild_converged_data. cf /vol/core-seed/kmers/core.2016-0817/build
 
 Build genus.data from patric: build_family_dir_from_genera
-Build local families: run_mcl_parallel
+Build local families: run_kmcl_parallel
 
 Create alignments.
   Create directory sync.dir
